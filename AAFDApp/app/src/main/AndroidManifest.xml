@@ -12,6 +12,86 @@
         android:theme="@style/Theme.AAFDApp"
         tools:targetApi="31">
         <activity
+            android:name=".SpecialtyMenu"
+            android:exported="false"
+            android:label="@string/title_activity_specialty_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
+            android:name=".BuildYourOwnMenu"
+            android:exported="false"
+            android:label="@string/title_activity_build_your_own_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
+            android:name=".UserAccountMenu"
+            android:exported="false"
+            android:label="@string/title_activity_user_account_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
+            android:name=".SettingsMenu"
+            android:exported="false"
+            android:label="@string/title_activity_settings_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
+            android:name=".RedBullMenu"
+            android:exported="false"
+            android:label="@string/title_activity_red_bull_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
+            android:name=".SodaMenu"
+            android:exported="false"
+            android:label="@string/title_activity_soda_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
+            android:name=".TonicMenu"
+            android:exported="false"
+            android:label="@string/title_activity_tonic_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
+            android:name=".HardLiquorMenu"
+            android:exported="false"
+            android:label="@string/title_activity_hard_liquor_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
+            android:name=".WineMenu"
+            android:exported="false"
+            android:label="@string/title_activity_wine_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
+            android:name=".BeerMenu"
+            android:exported="false"
+            android:label="@string/title_activity_beer_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
+            android:name=".AlcoholMenu"
+            android:exported="false"
+            android:label="@string/title_activity_alcohol_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
+            android:name=".MixerMenu"
+            android:exported="false"
+            android:label="@string/title_activity_mixer_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
+            android:name=".PickupMenu"
+            android:exported="false"
+            android:label="@string/title_activity_pickup_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
+            android:name=".DrinkMenu"
+            android:exported="false"
+            android:label="@string/title_activity_drink_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
+            android:name=".FoodMenu"
+            android:exported="false"
+            android:label="@string/title_activity_food_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
+            android:name=".TopMenu"
+            android:exported="false"
+            android:label="@string/title_activity_top_menu"
+            android:theme="@style/Theme.AAFDApp.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

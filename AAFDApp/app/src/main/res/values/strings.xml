@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">AAFD App</string>
+    <string name="title_activity_top_menu">TopMenu</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_food_menu">FoodMenu</string>
+    <string name="title_activity_drink_menu">DrinkMenu</string>
+    <string name="title_activity_pickup_menu">PickupMenu</string>
+    <string name="title_activity_mixer_menu">MixerMenu</string>
+    <string name="title_activity_alcohol_menu">AlcoholMenu</string>
+    <string name="title_activity_beer_menu">BeerMenu</string>
+    <string name="title_activity_wine_menu">WineMenu</string>
+    <string name="title_activity_hard_liquor_menu">HardLiquorMenu</string>
+    <string name="title_activity_tonic_menu">TonicMenu</string>
+    <string name="title_activity_soda_menu">SodaMenu</string>
+    <string name="title_activity_red_bull_menu">RedBullMenu</string>
+    <string name="title_activity_settings_menu">SettingsMenu</string>
+    <string name="title_activity_user_account_menu">UserAccountMenu</string>
+    <string name="title_activity_build_your_own_menu">BuildYourOwnMenu</string>
+    <string name="title_activity_specialty_menu">SpecialtyMenu</string>
 </resources>
