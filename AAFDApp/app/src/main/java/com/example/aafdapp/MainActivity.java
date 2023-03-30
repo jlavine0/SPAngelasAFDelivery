@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void drink(View view)
-    {
+    { Toast test=Toast.makeText (this, "someone pressed the drink button", Toast.LENGTH_LONG);
 
     }
 }
