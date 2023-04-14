@@ -1,34 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0575ad"
     tools:context=".AlcoholMenu">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/Theme.AAFDApp.AppBarOverlay">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.AAFDApp.PopupOverlay" />
+    <Button
+        android:id="@+id/beer"
+        android:layout_width="264dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#5c2f02"
+        android:text="Beer?"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:iconTint="#BC0CDA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#9C27B0" />
 
-    </com.google.android.material.appbar.AppBarLayout>
+    <Button
+        android:id="@+id/wine"
+        android:layout_width="264dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="296dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#e6c15e"
+        android:text="Wine?"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:iconTint="#BC0CDA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#9C27B0" />
+    <Button
+        android:id="@+id/hardLiquor"
+        android:layout_width="264dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#1da6a8"
+        android:text="Hard Liquor?"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <include layout="@layout/content_alcohol_menu" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="@dimen/fab_margin"
-        android:layout_marginBottom="16dp"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

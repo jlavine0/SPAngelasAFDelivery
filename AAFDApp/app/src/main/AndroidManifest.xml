@@ -11,6 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AAFDApp"
         tools:targetApi="31">
+
         <activity
             android:name=".SpecialtyMenu"
             android:exported="false"
