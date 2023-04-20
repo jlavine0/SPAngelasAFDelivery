@@ -8,6 +8,7 @@
     tools:context=".MixerMenu">
 
     <Button
+        android:id="@+id/tonicH2O"
         android:id="@+id/button3"
         android:layout_width="264dp"
         android:layout_height="133dp"
@@ -24,6 +25,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
+        android:id="@+id/soda"
         android:id="@+id/button2"
         android:layout_width="264dp"
         android:layout_height="133dp"
@@ -32,6 +34,24 @@
         android:layout_marginEnd="60dp"
         android:backgroundTint="#c706b4"
         android:text="Soda?"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:iconTint="#BC0CDA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#9C27B0" />
+        
+    <Button
+        android:id="@+id/redBull"
+        android:layout_width="264dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="496dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#348f00"
+        android:text="Red Bull?"
         android:textColor="@color/white"
         android:textSize="30sp"
         app:iconTint="#BC0CDA"
@@ -58,6 +78,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="#9C27B0" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,6 @@
 package com.example.aafdapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -7,6 +8,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
+import android.widget.Button;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -17,51 +19,36 @@ import com.example.aafdapp.databinding.ActivityMixerMenuBinding;
 
 public class MixerMenu extends AppCompatActivity {
 
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityMixerMenuBinding binding;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_mixer_menu);
 
-        binding = ActivityMixerMenuBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
 
-        setSupportActionBar(binding.toolbar);
+        Button btn = (Button)findViewById(R.id.tonicH2O);
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_mixer_menu);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-
-        binding.fab.setOnClickListener(new View.OnClickListener() {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+                startActivity(new Intent(MixerMenu.this, TonicMenu.class));
             }
         });
-    }
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_mixer_menu);
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-                || super.onSupportNavigateUp();
-    }
+        Button btn2 = (Button)findViewById(R.id.soda);
 
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MixerMenu.this, SodaMenu.class));
+            }
+        });
+        Button btn3 = (Button)findViewById(R.id.redBull);
 
-    public void tonicH2O(View view)
-    {
-
-    }
-
-    public void soda(View view)
-    {
-
-    }
-
-    public void redBull(View view)
-    {
-
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MixerMenu.this, RedBullMenu.class));
+            }
+        });
     }
 }

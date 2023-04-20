@@ -1,5 +1,6 @@
 package com.example.aafdapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -7,6 +8,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
+import android.widget.Button;
 
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -16,46 +18,27 @@ import androidx.navigation.ui.NavigationUI;
 import com.example.aafdapp.databinding.ActivityFoodMenuBinding;
 
 public class FoodMenu extends AppCompatActivity {
-
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityFoodMenuBinding binding;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_food_menu);
 
-        binding = ActivityFoodMenuBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        Button btn = (Button)findViewById(R.id.pickup);
 
-        setSupportActionBar(binding.toolbar);
-
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_food_menu);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-
-        binding.fab.setOnClickListener(new View.OnClickListener() {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+                startActivity(new Intent(FoodMenu.this, PickupMenu.class));
             }
         });
-    }
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_food_menu);
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-                || super.onSupportNavigateUp();
-    }
+        Button btn2 = (Button)findViewById(R.id.delivery);
 
-    public void pickup(View view)
-    {
-
-    }
-
-    public void delivery(View view)
-    {
-
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //startActivity(Msg + Call 911);
+            }
+        });
     }
 }
