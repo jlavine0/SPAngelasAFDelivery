@@ -16,6 +16,9 @@
         android:layout_marginEnd="60dp"
         android:backgroundTint="#e6b122"
         android:text="Mixer"
+        android:layout_marginBottom="97dp"
+        android:text="Mixers"
+        android:backgroundTint="#e6b122"
         android:textColor="@color/white"
         android:textSize="30sp"
         app:iconTint="#BC0CDA"
@@ -27,6 +30,7 @@
 
     <Button
         android:id="@+id/alcohol"
+        android:id="@+id/button3"
         android:layout_width="264dp"
         android:layout_height="133dp"
         android:layout_marginStart="60dp"
