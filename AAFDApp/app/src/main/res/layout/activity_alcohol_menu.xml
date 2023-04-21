@@ -43,6 +43,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:strokeColor="#9C27B0" />
+    
     <Button
         android:id="@+id/hardLiquor"
         android:layout_width="264dp"

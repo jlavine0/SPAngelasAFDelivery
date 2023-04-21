@@ -32,15 +32,5 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, DrinkMenu.class));
             }
         });
-
-    public void food(View view)
-    {
-
-    }
-
-
-    public void drink(View view)
-    { Toast test=Toast.makeText (this, "someone pressed the drink button", Toast.LENGTH_LONG);
-
     }
 }
