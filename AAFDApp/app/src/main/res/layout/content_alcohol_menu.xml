@@ -13,13 +13,15 @@
         android:layout_width="264dp"
         android:layout_height="133dp"
         android:layout_marginStart="71dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="150dp"
         android:layout_marginEnd="60dp"
+        android:layout_marginBottom="69dp"
         android:backgroundTint="#5c2f02"
         android:text="Beer?"
         android:textColor="@color/white"
         android:textSize="30sp"
         app:iconTint="#BC0CDA"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,17 +33,19 @@
         android:layout_width="264dp"
         android:layout_height="133dp"
         android:layout_marginStart="71dp"
-        android:layout_marginTop="296dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="60dp"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="#e6c15e"
         android:text="Wine?"
         android:textColor="@color/white"
         android:textSize="30sp"
         app:iconTint="#BC0CDA"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
         app:strokeColor="#9C27B0" />
 
     <Button
@@ -49,8 +53,9 @@
         android:layout_width="264dp"
         android:layout_height="133dp"
         android:layout_marginStart="71dp"
+        android:layout_marginTop="69dp"
         android:layout_marginEnd="60dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="150dp"
         android:backgroundTint="#1da6a8"
         android:text="Hard Liquour?"
         android:textColor="@color/white"
@@ -58,6 +63,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.125"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
