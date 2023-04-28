@@ -65,4 +65,5 @@
         app:layout_constraintTop_toBottomOf="@+id/soda"
         app:strokeColor="#9C27B0" />
 
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,7 +16,7 @@
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="97dp"
         android:text="Mixers?"
-        android:backgroundTint="#e6b122"
+        android:backgroundTint="#ab8403"
         android:textColor="@color/white"
         android:textSize="30sp"
         app:iconTint="#BC0CDA"
