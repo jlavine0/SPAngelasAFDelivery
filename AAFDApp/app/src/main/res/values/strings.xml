@@ -24,4 +24,18 @@
     <string name="title_activity_user_account_menu">UserAccountMenu</string>
     <string name="title_activity_build_your_own_menu">BuildYourOwnMenu</string>
     <string name="title_activity_specialty_menu">SpecialtyMenu</string>
+
+    <string name="location_access_required">Location access is required to place an order.</string>
+    <string name="location_permission_granted">Location Permission Granted.</string>
+    <string name="location_permission_denied">Location permission request denied.</string>
+    <string name="location_permission_available">Location Permission Available.</string>
+    <string name="location_unavailable">Location Unavailable. This may be due to the app being denied access. If you believe this is in error, please check your location settings.</string>
+    <string name="ok">OK</string>
+    <string name="sms_access_required">SMS access is required to place an order.</string>
+    <string name="sms_unavailable">SMS unavailable. Check settings.</string>
+    <string name="sms_permission_granted">SMS Permission Granted</string>
+    <string name="sms_permission_available">SMS Permission Available</string>
+    <string name="permission_granted">Permission Granted</string>
+    <string name="permission_denied">Permission request denied</string>
+
 </resources>

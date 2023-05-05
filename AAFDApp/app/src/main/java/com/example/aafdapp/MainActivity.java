@@ -1,3 +1,10 @@
+/* Angela's Alcohol and Food Delivery Service
+*  Authors:
+*           Josh Lavine
+*           Angela Lazarro
+*           Kyla Leary
+* */
+
 package com.example.aafdapp;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,10 +20,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.content_main);
 
-        Button btn = (Button) findViewById(R.id.food);
-
+        Button btn = findViewById(R.id.food);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button btn2 = (Button) findViewById(R.id.drink);
+        Button btn2 = findViewById(R.id.drink);
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override

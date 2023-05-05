@@ -22,7 +22,7 @@ public class MixerMenu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mixer_menu);
+        setContentView(R.layout.content_mixer_menu);
 
 
         Button btn = (Button)findViewById(R.id.tonicH2O);

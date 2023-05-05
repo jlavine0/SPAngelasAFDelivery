@@ -1,19 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    android:background="#0575ad"
+    android:id="@+id/food_layout"
+    tools:context=".FoodMenu">
 
-    <fragment
-        android:id="@+id/nav_host_fragment_content_food_menu"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <Button
+        android:id="@+id/pickup"
+        android:layout_width="264dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="60dp"
+        android:backgroundTint="#5c0d07"
+        android:text="Pickup?"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:iconTint="#BC0CDA"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/nav_graph2" />
+        app:strokeColor="#9C27B0" />
+
+    <Button
+        android:id="@+id/delivery"
+        android:layout_width="264dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="180dp"
+        android:backgroundTint="#492eb3"
+        android:text="Delivery?"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

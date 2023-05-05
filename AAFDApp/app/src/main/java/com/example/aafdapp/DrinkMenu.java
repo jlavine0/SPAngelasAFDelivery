@@ -25,7 +25,7 @@ public class DrinkMenu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_drink_menu);
+        setContentView(R.layout.content_drink_menu);
 
         Button btn = (Button)findViewById(R.id.mixer);
 

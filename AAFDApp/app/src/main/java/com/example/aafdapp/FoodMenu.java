@@ -1,6 +1,7 @@
 package com.example.aafdapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -21,7 +22,7 @@ public class FoodMenu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food_menu);
+        setContentView(R.layout.content_food_menu);
 
         Button btn = (Button)findViewById(R.id.pickup);
 
@@ -37,7 +38,13 @@ public class FoodMenu extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(Msg + Call 911);
+
+                String phNum = "18025354634";
+
+                Intent call = new Intent(Intent.ACTION_CALL);
+                call.setData(Uri.parse("tel:" + phNum));
+
+                startActivity(call);
             }
         });
     }

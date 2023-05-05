@@ -1,19 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    android:background="#0575ad"
+    android:id="@+id/mixer_layout"
+    tools:context=".MixerMenu">
 
-    <fragment
-        android:id="@+id/nav_host_fragment_content_mixer_menu"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:defaultNavHost="true"
+    <Button
+        android:id="@+id/tonicH2O"
+        android:layout_width="264dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="69dp"
+        android:backgroundTint="#a80212"
+        android:text="Tonic Water?"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/soda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/soda"
+        android:layout_width="264dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#c706b4"
+        android:text="Soda?"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:iconTint="#BC0CDA"
+        app:layout_constraintBottom_toTopOf="@+id/redBull"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tonicH2O"
+        app:strokeColor="#9C27B0" />
+
+    <Button
+        android:id="@+id/redBull"
+        android:layout_width="264dp"
+        android:layout_height="133dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="150dp"
+        android:backgroundTint="#348f00"
+        android:text="Red Bull?"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:iconTint="#BC0CDA"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/nav_graph5" />
+        app:layout_constraintTop_toBottomOf="@+id/soda"
+        app:strokeColor="#9C27B0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

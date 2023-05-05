@@ -23,7 +23,7 @@ public class AlcoholMenu extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_alcohol_menu);
+    setContentView(R.layout.content_alcohol_menu);
 
         Button btn = (Button)findViewById(R.id.beer);
 
