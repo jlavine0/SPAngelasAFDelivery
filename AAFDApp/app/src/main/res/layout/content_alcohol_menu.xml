@@ -37,7 +37,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="60dp"
         android:layout_marginBottom="30dp"
-        android:backgroundTint="#e6c15e"
+        android:backgroundTint="#d7a621"
         android:text="Wine?"
         android:textColor="@color/white"
         android:textSize="30sp"
