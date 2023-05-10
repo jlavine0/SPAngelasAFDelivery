@@ -9,6 +9,7 @@ import android.location.Criteria;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.provider.Telephony;
 import android.telephony.SmsManager;
 import android.view.View;
@@ -28,9 +29,6 @@ import androidx.navigation.ui.NavigationUI;
 
 import com.example.aafdapp.databinding.ActivityBeerMenuBinding;
 
-import java.util.Map;
-
-
 public class BeerMenu extends AppCompatActivity implements ActivityCompat.OnRequestPermissionsResultCallback {
 
     private LocationManager service;
@@ -49,6 +47,18 @@ public class BeerMenu extends AppCompatActivity implements ActivityCompat.OnRequ
     private static final int PERMISSION_REQUEST_LOCATION = 0;
     private static final int PERMISSION_REQUEST_SMS = 1;
 
+    private int press = 0;
+
+    private CountDownTimer smsTimer = new CountDownTimer(3000, 1000) {
+
+        public void onTick(long millisUntilFinished) {}
+        public void onFinish() {
+            locateMe();
+            sendSMS();
+            press--;
+        }
+    };
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,9 +68,14 @@ public class BeerMenu extends AppCompatActivity implements ActivityCompat.OnRequ
         Button btn = (Button) findViewById(R.id.order);
 
         btn.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                amISafe();
+                press++;
+                if (press % 2 == 1)
+                    amISafe();
+                else
+                    iAmSafe();
             }
         });
     }
@@ -164,9 +179,13 @@ public class BeerMenu extends AppCompatActivity implements ActivityCompat.OnRequ
 
     private void amISafe() {
 
-        locateMe();
+        smsTimer.start();
+    }
 
-        sendSMS();
+    private void iAmSafe() {
+
+        smsTimer.cancel();
+
     }
 
     private void sendSMS() {
